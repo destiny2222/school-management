@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" fill="none">
+  <!-- Giant open book watermark in white for dark section 3 -->
+  <g fill="#FFFFFF" opacity="0.12">
+    <path d="M60 140 C140 120 220 125 250 160 L250 380 C220 345 140 340 60 360 Z"/>
+    <path d="M440 140 C360 120 280 125 250 160 L250 380 C280 345 360 340 440 360 Z"/>
+    <circle cx="250" cy="90" r="30" fill="#F59E0B" opacity="0.25"/>
+  </g>
+</svg>

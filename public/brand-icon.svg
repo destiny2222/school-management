@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <rect width="100" height="100" rx="22" fill="#0B286D"/>
+  <!-- Open Book -->
+  <g fill="#FFFFFF">
+    <path d="M16 32 C26 28 42 29 50 35 L50 78 C42 72 26 71 16 75 Z"/>
+    <path d="M22 37 C30 35 42 36 47 40 L47 74 C41 70 30 69 22 72 Z" fill="#60A5FA"/>
+    <path d="M84 32 C74 28 58 29 50 35 L50 78 C58 72 74 71 84 75 Z"/>
+    <path d="M78 37 C70 35 58 36 53 40 L53 74 C59 70 70 69 78 72 Z" fill="#60A5FA"/>
+    <path d="M49 35 L51 35 L51 79 L49 79 Z" fill="#F59E0B"/>
+  </g>
+  <!-- Yellow Star -->
+  <polygon points="50,14 52,19 57,19 53,22 55,27 50,24 45,27 47,22 43,19 48,19" fill="#F59E0B"/>
+</svg>
