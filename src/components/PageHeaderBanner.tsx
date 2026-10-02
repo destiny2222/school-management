@@ -125,11 +125,11 @@ export default function PageHeaderBanner({
           transition={{ duration: 0.5, delay: 0.1 }}
           className="inline-flex items-center gap-2 bg-white/90 backdrop-blur-md px-4 py-1.5 rounded-full border border-amber-200/90 shadow-xs mb-6 text-xs sm:text-sm font-semibold text-gray-700 hover:shadow-md transition-shadow"
         >
-          <Link href="/" className="hover:text-[#0B286D] transition-colors">
+          <Link href="/" className="hover:text-[#EF5F18] transition-colors">
             Home
           </Link>
           <span className="text-gray-400">/</span>
-          <span className="text-[#0B1B3D] font-extrabold">{breadcrumbPage}</span>
+          <span className="text-[#261A66] font-extrabold">{breadcrumbPage}</span>
         </motion.div>
 
         {/* Heading with Left Spark Ray SVG */}
@@ -154,10 +154,10 @@ export default function PageHeaderBanner({
             />
           </motion.div>
 
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-[#0B1B3D] tracking-tight leading-[1.25]">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-[#261A66] tracking-tight leading-[1.25]">
             {title}{" "}
             {highlightText && (
-              <span className="relative inline-block px-3 py-0.5 rounded-xl bg-[#D0F2F1] text-[#0F172A]">
+              <span className="relative inline-block px-3 py-0.5 rounded-xl bg-[#EF5F18] text-white">
                 {highlightText}
               </span>
             )}

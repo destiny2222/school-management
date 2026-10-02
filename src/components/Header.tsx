@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import logo from '@/assets/image/logo/logo.jpg'
 
 interface HeaderProps {
   isDarkText?: boolean;
@@ -29,7 +30,7 @@ export default function Header({ isDarkText = false }: HeaderProps) {
         scrolled
           ? "bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100 py-3 text-gray-800"
           : isDarkText
-          ? "bg-[#FFFDF0]/80 backdrop-blur-xs py-4 text-[#0B1B3D]"
+          ? "bg-[#FFFDF0]/80 backdrop-blur-xs py-4 text-[#261A66]"
           : "bg-transparent py-5 text-white"
       }`}
     >
@@ -38,10 +39,10 @@ export default function Header({ isDarkText = false }: HeaderProps) {
         <Link className="flex-shrink-0 flex items-center gap-3 group" href="/">
           <Image
             alt="Bethel Montessori Academy Logo"
-            width={180}
-            height={46}
-            className="h-9 sm:h-10 w-auto transition-transform group-hover:scale-105"
-            src="/logo.png"
+            width={200}
+            height={106}
+            className="h-16 sm:h-15 w-auto transition-transform group-hover:scale-105"
+            src={logo}
             priority
           />
         </Link>
@@ -51,7 +52,7 @@ export default function Header({ isDarkText = false }: HeaderProps) {
           <Link
             href="/"
             className={`transition-colors relative pb-1 ${
-              isDark ? "text-[#0B286D] font-bold" : "text-white font-bold"
+              isDark ? "text-[#261A66] font-bold" : "text-white font-bold"
             }`}
           >
             <span>Home</span>
@@ -60,7 +61,7 @@ export default function Header({ isDarkText = false }: HeaderProps) {
             href="/enroll"
             className={`transition-colors cursor-pointer font-semibold ${
               isDark
-                ? "text-gray-800 hover:text-[#0B286D]"
+                ? "text-gray-800 hover:text-[#261A66]"
                 : "text-white/90 hover:text-white"
             }`}
           >
@@ -70,7 +71,7 @@ export default function Header({ isDarkText = false }: HeaderProps) {
             href="/gallery"
             className={`transition-colors cursor-pointer font-semibold ${
               isDark
-                ? "text-gray-800 hover:text-[#0B286D]"
+                ? "text-gray-800 hover:text-[#261A66]"
                 : "text-white/90 hover:text-white"
             }`}
           >
@@ -80,7 +81,7 @@ export default function Header({ isDarkText = false }: HeaderProps) {
             href="/academics"
             className={`transition-colors cursor-pointer font-semibold ${
               isDark
-                ? "text-gray-800 hover:text-[#0B286D]"
+                ? "text-gray-800 hover:text-[#261A66]"
                 : "text-white/90 hover:text-white"
             }`}
           >
@@ -90,7 +91,7 @@ export default function Header({ isDarkText = false }: HeaderProps) {
             href="/our-story"
             className={`transition-colors cursor-pointer font-semibold ${
               isDark
-                ? "text-gray-800 hover:text-[#0B286D]"
+                ? "text-gray-800 hover:text-[#261A66]"
                 : "text-white/90 hover:text-white"
             }`}
           >
@@ -100,7 +101,7 @@ export default function Header({ isDarkText = false }: HeaderProps) {
             href="/contact"
             className={`transition-colors cursor-pointer font-semibold ${
               isDark
-                ? "text-gray-800 hover:text-[#0B286D]"
+                ? "text-gray-800 hover:text-[#261A66]"
                 : "text-white/90 hover:text-white"
             }`}
           >
@@ -110,7 +111,7 @@ export default function Header({ isDarkText = false }: HeaderProps) {
             href="/auth/login"
             className={`transition-colors cursor-pointer font-semibold ${
               isDark
-                ? "text-gray-800 hover:text-[#0B286D]"
+                ? "text-gray-800 hover:text-[#261A66]"
                 : "text-white/90 hover:text-white"
             }`}
           >
@@ -124,8 +125,8 @@ export default function Header({ isDarkText = false }: HeaderProps) {
             href="/auth/login"
             className={`px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold tracking-wide transition-all shadow-md hover:shadow-lg active:scale-95 cursor-pointer ${
               isDark
-                ? "bg-[#0B1B3D] hover:bg-[#D90429] text-white"
-                : "bg-white hover:bg-[#FACC15] text-[#0B1B3D] hover:text-[#0B1B3D]"
+                ? "bg-[#261A66] hover:bg-[#EF5F18] text-white"
+                : "bg-[#EF5F18] hover:bg-white text-white hover:text-[#261A66]"
             }`}
           >
             Log In
@@ -135,8 +136,8 @@ export default function Header({ isDarkText = false }: HeaderProps) {
             aria-label="Search"
             className={`w-9 h-9 rounded-full flex items-center justify-center transition-all cursor-pointer ${
               isDark
-                ? "bg-gray-100 hover:bg-gray-200 text-[#0B1B3D]"
-                : "bg-[#0B1B3D]/70 hover:bg-[#0B1B3D] text-white backdrop-blur-xs"
+                ? "bg-gray-100 hover:bg-gray-200 text-[#261A66]"
+                : "bg-[#261A66]/70 hover:bg-[#261A66] text-white backdrop-blur-xs"
             }`}
           >
             <svg
@@ -161,7 +162,7 @@ export default function Header({ isDarkText = false }: HeaderProps) {
           <Link
             href="/auth/login"
             className={`px-3.5 py-1.5 rounded-full text-xs font-bold ${
-              isDark ? "bg-[#0B1B3D] text-white" : "bg-white text-[#0B1B3D]"
+              isDark ? "bg-[#261A66] text-white" : "bg-white text-[#261A66]"
             }`}
           >
             Login
@@ -172,7 +173,7 @@ export default function Header({ isDarkText = false }: HeaderProps) {
             aria-label="Toggle mobile menu"
             className={`p-2 rounded-lg transition-colors ${
               isDark
-                ? "text-[#0B1B3D] hover:bg-gray-100"
+                ? "text-[#261A66] hover:bg-gray-100"
                 : "text-white hover:bg-white/10"
             }`}
           >
@@ -204,54 +205,54 @@ export default function Header({ isDarkText = false }: HeaderProps) {
 
       {/* Mobile Drawer Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-[#0B1B3D] text-white rounded-2xl mt-3 p-6 shadow-2xl space-y-4 animate-fadeIn">
+        <div className="md:hidden bg-[#261A66] text-white rounded-2xl mt-3 p-6 shadow-2xl space-y-4 animate-fadeIn">
           <div className="flex flex-col space-y-3 font-semibold text-base">
             <Link
               href="/"
               onClick={() => setMobileMenuOpen(false)}
-              className="py-1 hover:text-[#F59E0B]"
+              className="py-1 hover:text-[#EF5F18]"
             >
               Home
             </Link>
             <Link
               href="/enroll"
               onClick={() => setMobileMenuOpen(false)}
-              className="py-1 hover:text-[#F59E0B]"
+              className="py-1 hover:text-[#EF5F18]"
             >
               Enroll
             </Link>
             <Link
               href="/gallery"
               onClick={() => setMobileMenuOpen(false)}
-              className="py-1 hover:text-[#F59E0B]"
+              className="py-1 hover:text-[#EF5F18]"
             >
               Gallery
             </Link>
             <Link
               href="/academics"
               onClick={() => setMobileMenuOpen(false)}
-              className="py-1 hover:text-[#F59E0B]"
+              className="py-1 hover:text-[#EF5F18]"
             >
               Academics
             </Link>
             <Link
               href="/our-story"
               onClick={() => setMobileMenuOpen(false)}
-              className="py-1 hover:text-[#F59E0B]"
+              className="py-1 hover:text-[#EF5F18]"
             >
               Our Story
             </Link>
             <Link
               href="/contact"
               onClick={() => setMobileMenuOpen(false)}
-              className="py-1 hover:text-[#F59E0B]"
+              className="py-1 hover:text-[#EF5F18]"
             >
               Contact
             </Link>
             <Link
               href="/auth/login"
               onClick={() => setMobileMenuOpen(false)}
-              className="py-1 hover:text-[#F59E0B]"
+              className="py-1 hover:text-[#EF5F18]"
             >
               PTA
             </Link>
@@ -260,7 +261,7 @@ export default function Header({ isDarkText = false }: HeaderProps) {
             <Link
               href="/auth/login"
               onClick={() => setMobileMenuOpen(false)}
-              className="w-full text-center py-3 rounded-xl bg-[#D90429] text-white font-bold"
+              className="w-full text-center py-3 rounded-xl bg-[#EF5F18] text-white font-bold"
             >
               Portal Login
             </Link>

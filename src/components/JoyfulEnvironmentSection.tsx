@@ -94,14 +94,13 @@ export default function JoyfulEnvironmentSection({
           </div>
 
           {/* Heading */}
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#0B1B3D] tracking-tight leading-[1.2]">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#261A66] tracking-tight leading-[1.2]">
             Joyful environment{" "}
-            <span className="relative inline-block px-2.5 py-0.5 rounded-md bg-[#BAE6FD] text-[#0F172A] font-black">
+            <span className="relative inline-block px-2.5 py-0.5 rounded-md bg-[#EF5F18] text-white font-black">
               where children learn
             </span>{" "}
             confidently
           </h2>
-
           {/* Subtitle */}
           <p className="mt-4 text-gray-600 text-base sm:text-lg font-medium leading-relaxed max-w-2xl">
             A welcoming space nurtures confidence, curiosity, and creativity as
@@ -114,7 +113,7 @@ export default function JoyfulEnvironmentSection({
           {/* Column 1: Left Image Container with Dashed Purple Frame */}
           <div
             ref={col1Ref}
-            className="bg-white rounded-3xl p-3.5 border-2 border-dashed border-[#D8B4FE] shadow-xl shadow-purple-50/60 flex flex-col min-h-[420px] group transition-all duration-300 hover:shadow-2xl"
+            className="bg-white rounded-3xl p-3.5 border-2 border-dashed border-[#261A66]/30 shadow-xl shadow-purple-900/5 flex flex-col min-h-[420px] group transition-all duration-300 hover:shadow-2xl"
           >
             <div className="relative w-full h-full min-h-[380px] rounded-2xl overflow-hidden">
               <Image
@@ -146,7 +145,7 @@ export default function JoyfulEnvironmentSection({
             {/* Floating White Overlay Card */}
             <div className="bg-white/95 backdrop-blur-md rounded-2xl p-6 shadow-xl border border-gray-100 relative z-10 transition-transform duration-300 group-hover:-translate-y-1">
               {/* Icon */}
-              <div className="w-12 h-12 rounded-xl bg-[#FFF1F2] border border-[#FFE4E6] flex items-center justify-center text-[#F43F5E] mb-3">
+              <div className="w-12 h-12 rounded-xl bg-[#FFF3EC] border border-[#FFE2D1] flex items-center justify-center text-[#EF5F18] mb-3">
                 <svg
                   className="w-6 h-6"
                   viewBox="0 0 24 24"
@@ -162,7 +161,7 @@ export default function JoyfulEnvironmentSection({
               </div>
 
               {/* Title & Subtitle */}
-              <h3 className="text-[#0B1B3D] font-black text-xl mb-1">
+              <h3 className="text-[#261A66] font-black text-xl mb-1">
                 Confident learning
               </h3>
               <p className="text-gray-600 text-sm font-medium leading-relaxed">
@@ -171,15 +170,15 @@ export default function JoyfulEnvironmentSection({
             </div>
           </div>
 
-          {/* Column 3: Right Sky-Blue Block with 15+ Stat & Red CTA */}
+          {/* Column 3: Right Light Purple Block with 15+ Stat & Orange CTA */}
           <div
             ref={col3Ref}
-            className="bg-[#E0F2FE] rounded-3xl p-6 sm:p-7 flex flex-col justify-between shadow-xl shadow-sky-100/80 min-h-[420px] border border-sky-100"
+            className="bg-[#F0EDFF] rounded-3xl p-6 sm:p-7 flex flex-col justify-between shadow-xl shadow-purple-900/5 min-h-[420px] border border-purple-100"
           >
             {/* Top Stat Card */}
-            <div className="bg-white rounded-2xl p-6 shadow-md border border-sky-100/70 mb-6">
+            <div className="bg-white rounded-2xl p-6 shadow-md border border-purple-100/70 mb-6">
               {/* Icon */}
-              <div className="w-12 h-12 rounded-xl bg-[#F0F9FF] border border-[#E0F2FE] flex items-center justify-center text-[#0284C7] mb-3">
+              <div className="w-12 h-12 rounded-xl bg-[#F0EDFF] border border-[#261A66]/20 flex items-center justify-center text-[#261A66] mb-3">
                 <svg
                   className="w-6 h-6"
                   viewBox="0 0 24 24"
@@ -195,7 +194,7 @@ export default function JoyfulEnvironmentSection({
               </div>
 
               {/* Stat Number */}
-              <div className="text-4xl sm:text-5xl font-black text-[#0B1B3D] tracking-tight">
+              <div className="text-4xl sm:text-5xl font-black text-[#261A66] tracking-tight">
                 15+
               </div>
               <div className="text-gray-600 font-semibold text-sm sm:text-base mt-1">
@@ -203,21 +202,21 @@ export default function JoyfulEnvironmentSection({
               </div>
             </div>
 
-            {/* Bottom Section: Subtext & Red CTA */}
+            {/* Bottom Section: Subtext & Orange CTA */}
             <div>
-              <p className="text-[#0369A1] font-medium text-xs sm:text-sm mb-5 leading-relaxed">
+              <p className="text-[#261A66] font-medium text-xs sm:text-sm mb-5 leading-relaxed">
                 Building a foundation of curiosity, safety, and academic
                 success for over a decade.
               </p>
 
               <button
                 onClick={onEnrollClick}
-                className="w-full bg-[#E11D48] hover:bg-[#BE123C] text-white font-extrabold py-3.5 px-6 rounded-full inline-flex items-center justify-between shadow-lg shadow-rose-200/80 cursor-pointer transition-all duration-300 group"
+                className="w-full bg-[#EF5F18] hover:bg-[#D44E0E] text-white font-extrabold py-3.5 px-6 rounded-full inline-flex items-center justify-between shadow-lg shadow-orange-500/30 cursor-pointer transition-all duration-300 group"
               >
                 <span className="text-sm sm:text-base tracking-wide">
                   Discover more
                 </span>
-                <span className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center text-white group-hover:bg-white group-hover:text-[#E11D48] transition-all duration-300">
+                <span className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center text-white group-hover:bg-white group-hover:text-[#EF5F18] transition-all duration-300">
                   <svg
                     className="w-4 h-4 transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"
                     viewBox="0 0 24 24"

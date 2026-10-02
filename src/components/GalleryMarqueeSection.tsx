@@ -106,9 +106,9 @@ export default function GalleryMarqueeSection({
           </div>
 
           {/* Heading */}
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-black text-[#0B1B3D] tracking-tight leading-[1.2]">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-black text-[#261A66] tracking-tight leading-[1.2]">
             Bright minds and joyful hearts{" "}
-            <span className="relative inline-block px-2.5 py-0.5 rounded-md bg-[#D0F2F1] text-[#0F172A] font-black">
+            <span className="relative inline-block px-2.5 py-0.5 rounded-md bg-[#EF5F18] text-white font-black">
               shine through
             </span>{" "}
             every captured image

@@ -288,7 +288,7 @@ export default function HeroSection({ onEnrollClick, onLoginClick }: HeroSection
   return (
     <section
       ref={containerRef}
-      className="relative w-full min-h-[92vh] lg:min-h-screen flex items-center justify-center overflow-hidden pt-28 pb-16 lg:pt-36 lg:pb-20 bg-[#07132B]"
+      className="relative w-full min-h-[92vh] lg:min-h-screen flex items-center justify-center overflow-hidden pt-28 pb-16 lg:pt-36 lg:pb-20 bg-[#261A66]"
       style={{ perspective: "1000px" }}
     >
       {/* ────────────────────────────────────────────────────────
@@ -311,12 +311,12 @@ export default function HeroSection({ onEnrollClick, onLoginClick }: HeroSection
       {/* Multi-layered Soft Dark Vignette Overlay for High Image Visibility */}
       <div
         ref={overlayRef}
-        className="absolute inset-0 pointer-events-none z-0 bg-gradient-to-r from-[#07132B]/75 via-[#0B286D]/45 to-black/30"
+        className="absolute inset-0 pointer-events-none z-0 bg-gradient-to-r from-[#261A66]/90 via-[#190F47]/65 to-black/40"
       />
 
       {/* Subtle radial spotlight overlay for focus */}
-      <div className="absolute inset-0 pointer-events-none z-0 bg-[radial-gradient(circle_at_30%_30%,rgba(29,78,216,0.18),transparent_60%)]" />
-      <div className="absolute inset-0 pointer-events-none z-0 bg-[radial-gradient(circle_at_75%_65%,rgba(245,158,11,0.12),transparent_50%)]" />
+      <div className="absolute inset-0 pointer-events-none z-0 bg-[radial-gradient(circle_at_30%_30%,rgba(38,26,102,0.35),transparent_60%)]" />
+      <div className="absolute inset-0 pointer-events-none z-0 bg-[radial-gradient(circle_at_75%_65%,rgba(239,95,24,0.2),transparent_50%)]" />
 
       {/* Subtle Grid Pattern overlay */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff0a_1px,transparent_1px),linear-gradient(to_bottom,#ffffff0a_1px,transparent_1px)] bg-[size:48px_48px] pointer-events-none z-0 opacity-25" />
@@ -324,11 +324,11 @@ export default function HeroSection({ onEnrollClick, onLoginClick }: HeroSection
       {/* Ambient Animated Light Orbs */}
       <div
         ref={lightGlow1Ref}
-        className="absolute top-1/4 left-10 w-96 h-96 bg-[#1D4ED8]/15 blur-[120px] rounded-full pointer-events-none z-0"
+        className="absolute top-1/4 left-10 w-96 h-96 bg-[#261A66]/30 blur-[120px] rounded-full pointer-events-none z-0"
       />
       <div
         ref={lightGlow2Ref}
-        className="absolute bottom-10 right-10 w-[450px] h-[450px] bg-[#F59E0B]/15 blur-[140px] rounded-full pointer-events-none z-0"
+        className="absolute bottom-10 right-10 w-[450px] h-[450px] bg-[#EF5F18]/25 blur-[140px] rounded-full pointer-events-none z-0"
       />
 
       {/* ────────────────────────────────────────────────────────
@@ -340,16 +340,7 @@ export default function HeroSection({ onEnrollClick, onLoginClick }: HeroSection
           {/* LEFT COLUMN: HERO TEXT CONTENT */}
           <div className="lg:col-span-7 text-left space-y-6 sm:space-y-8">
             
-            {/* Eyebrow Live Badge */}
-            <div ref={eyebrowRef} className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 shadow-xl">
-              <span className="relative flex h-2.5 w-2.5">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#10B981] opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#10B981]"></span>
-              </span>
-              <span className="text-xs sm:text-sm font-bold text-white tracking-wider uppercase">
-                Bethel Montessori Academy • Benin City
-              </span>
-            </div>
+ 
 
             {/* Staggered Modern Headline */}
             <div className="space-y-1 sm:space-y-2 drop-shadow-[0_4px_16px_rgba(0,0,0,0.85)]">
@@ -361,7 +352,7 @@ export default function HeroSection({ onEnrollClick, onLoginClick }: HeroSection
               </h1>
               <h1
                 ref={titleLine2Ref}
-                className="text-4xl sm:text-6xl md:text-7xl font-black uppercase tracking-tight leading-[1.05] text-transparent bg-clip-text bg-gradient-to-r from-[#F59E0B] via-[#FACC15] to-[#FFA000]"
+                className="text-4xl sm:text-6xl md:text-7xl font-black uppercase tracking-tight leading-[1.05] text-transparent bg-clip-text bg-gradient-to-r from-[#EF5F18] via-[#FF7633] to-[#EF5F18]"
               >
                 Building Leaders
               </h1>
@@ -389,7 +380,7 @@ export default function HeroSection({ onEnrollClick, onLoginClick }: HeroSection
               {/* Primary CTA */}
               <button
                 onClick={onEnrollClick}
-                className="group relative px-8 py-4 rounded-2xl bg-gradient-to-r from-[#D90429] via-[#EF233C] to-[#B80222] text-white font-extrabold text-base tracking-wide shadow-[0_10px_30px_rgba(217,4,41,0.4)] hover:shadow-[0_15px_40px_rgba(217,4,41,0.6)] transition-all duration-300 hover:scale-105 active:scale-95 inline-flex items-center gap-3 cursor-pointer overflow-hidden border border-white/20"
+                className="group relative px-8 py-4 rounded-2xl bg-gradient-to-r from-[#FF7633] via-[#EF5F18] to-[#D44E0E] text-white font-extrabold text-base tracking-wide shadow-[0_10px_30px_rgba(239,95,24,0.4)] hover:shadow-[0_15px_40px_rgba(239,95,24,0.6)] transition-all duration-300 hover:scale-105 active:scale-95 inline-flex items-center gap-3 cursor-pointer overflow-hidden border border-white/20"
               >
                 <span className="relative z-10">Enroll Your Child Now</span>
                 <svg
@@ -415,7 +406,7 @@ export default function HeroSection({ onEnrollClick, onLoginClick }: HeroSection
                   className="px-7 py-4 rounded-2xl bg-white/10 hover:bg-white/20 backdrop-blur-xl border border-white/25 text-white font-bold text-base tracking-wide transition-all duration-300 hover:scale-105 active:scale-95 inline-flex items-center gap-2.5 cursor-pointer shadow-lg"
                 >
                   <svg
-                    className="w-5 h-5 text-[#FACC15]"
+                    className="w-5 h-5 text-[#EF5F18]"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"

@@ -117,11 +117,11 @@ export default function OurStoryPage() {
                 learning.
               </p>
 
-              {/* Red Pill CTA Button */}
+              {/* Orange Pill CTA Button */}
               <div className="mb-10">
                 <Link
                   href="/enroll"
-                  className="inline-flex items-center gap-3 px-7 py-3.5 bg-[#E11D48] text-white font-bold text-sm sm:text-base rounded-full hover:bg-rose-700 transition-all duration-300 shadow-md hover:shadow-xl active:scale-95 group"
+                  className="inline-flex items-center gap-3 px-7 py-3.5 bg-[#EF5F18] text-white font-bold text-sm sm:text-base rounded-full hover:bg-[#D44E0E] transition-all duration-300 shadow-md hover:shadow-xl active:scale-95 group"
                 >
                   <span>Enroll Now</span>
                   <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
@@ -133,11 +133,11 @@ export default function OurStoryPage() {
               {/* 2 Feature Items with Soft Pastel Icon Boxes */}
               <div className="space-y-6 pt-4 border-t border-gray-100">
                 <div className="flex items-start gap-4">
-                  <div className="w-14 h-14 rounded-2xl bg-[#E0F2FE] text-[#0284C7] flex items-center justify-center shrink-0 shadow-xs">
+                  <div className="w-14 h-14 rounded-2xl bg-[#F0EDFF] text-[#261A66] flex items-center justify-center shrink-0 shadow-xs">
                     <HeartHandshake className="w-7 h-7" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold text-[#0B1B3D] mb-1">
+                    <h3 className="text-lg font-bold text-[#261A66] mb-1">
                       Safe and nurturing environment
                     </h3>
                     <p className="text-gray-600 text-sm font-medium leading-relaxed">
@@ -149,7 +149,7 @@ export default function OurStoryPage() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-14 h-14 rounded-2xl bg-[#FFE4E6] text-[#E11D48] flex items-center justify-center shrink-0 shadow-xs">
+                  <div className="w-14 h-14 rounded-2xl bg-[#FFF3EC] text-[#EF5F18] flex items-center justify-center shrink-0 shadow-xs">
                     <Palette className="w-7 h-7" />
                   </div>
                   <div>

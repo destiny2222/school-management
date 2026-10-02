@@ -72,9 +72,9 @@ export default function NurturingPlaceSection({
           <div ref={leftColRef} className="lg:col-span-7 flex flex-col">
             {/* Header Content */}
             <div>
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#0B1B3D] tracking-tight leading-[1.2]">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#261A66] tracking-tight leading-[1.2]">
                 A nurturing place where little learners{" "}
-                <span className="relative inline-block px-3 py-1 rounded-full bg-[#FACC15] text-[#0F172A] font-black shadow-xs">
+                <span className="relative inline-block px-3.5 py-1 rounded-full bg-[#EF5F18] text-white font-black shadow-xs">
                   thrive and shine
                 </span>
               </h2>
@@ -88,10 +88,10 @@ export default function NurturingPlaceSection({
               <div className="mt-8">
                 <button
                   onClick={onDiscoverClick}
-                  className="bg-[#E11D48] hover:bg-[#BE123C] text-white font-extrabold py-3.5 px-6 rounded-full inline-flex items-center gap-3 shadow-lg shadow-rose-200/80 cursor-pointer transition-all duration-300 group"
+                  className="bg-[#EF5F18] hover:bg-[#D44E0E] text-white font-extrabold py-3.5 px-6 rounded-full inline-flex items-center gap-3 shadow-lg shadow-orange-500/30 cursor-pointer transition-all duration-300 group"
                 >
                   <span className="text-base tracking-wide">Discover more</span>
-                  <span className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center text-white group-hover:bg-white group-hover:text-[#E11D48] transition-all duration-300">
+                  <span className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center text-white group-hover:bg-white group-hover:text-[#EF5F18] transition-all duration-300">
                     <svg
                       className="w-4 h-4 transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"
                       viewBox="0 0 24 24"
@@ -113,7 +113,7 @@ export default function NurturingPlaceSection({
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
               {/* Sub-Card 1: Peek into our fun-filled days */}
               <div className="flex flex-col">
-                <h3 className="text-[#0B1B3D] font-extrabold text-lg mb-3 leading-snug">
+                <h3 className="text-[#261A66] font-extrabold text-lg mb-3 leading-snug">
                   Peek into our fun-filled days and colorful memories
                 </h3>
                 <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-md border border-gray-100 group cursor-pointer">
@@ -128,7 +128,7 @@ export default function NurturingPlaceSection({
 
               {/* Sub-Card 2: 15+ Years Metric Card */}
               <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 flex flex-col justify-between h-full min-h-[190px]">
-                <div className="w-11 h-11 rounded-xl bg-[#E0F2FE] flex items-center justify-center text-[#0EA5E9]">
+                <div className="w-11 h-11 rounded-xl bg-[#F0EDFF] flex items-center justify-center text-[#261A66]">
                   <svg
                     className="w-6 h-6"
                     viewBox="0 0 24 24"
@@ -143,7 +143,7 @@ export default function NurturingPlaceSection({
                 </div>
 
                 <div>
-                  <div className="text-4xl sm:text-5xl font-black text-[#0B1B3D] tracking-tight">
+                  <div className="text-4xl sm:text-5xl font-black text-[#261A66] tracking-tight">
                     15+
                   </div>
                   <div className="text-gray-600 font-semibold text-sm mt-1">

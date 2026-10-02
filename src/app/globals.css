@@ -1,19 +1,26 @@
 @import "tailwindcss";
 @import "../assets/css/styles.css";
 
+@theme {
+  --color-primary: #261A66;
+  --color-primary-dark: #190F47;
+  --color-secondary: #EF5F18;
+  --color-secondary-hover: #D44E0E;
+}
+
 :root {
-  /* Bethel Montessori Academy Brand Colors */
-  --bethel-blue: #0B286D;
-  --bethel-blue-dark: #071B49;
-  --bethel-blue-light: #1D4ED8;
-  --bethel-red: #D90429;
-  --bethel-red-hover: #B80222;
-  --bethel-yellow: #F59E0B;
-  --bethel-amber: #FFA000;
+  /* Bethel Montessori Academy Brand Colors - Royal Purple-Navy & Electric Orange Palette */
+  --bethel-blue: #261A66;
+  --bethel-blue-dark: #190F47;
+  --bethel-blue-light: #37288A;
+  --bethel-red: #EF5F18;
+  --bethel-red-hover: #D44E0E;
+  --bethel-yellow: #EF5F18;
+  --bethel-amber: #EF5F18;
   --bethel-green: #10B981;
-  --bethel-dark-navy: #0B1B3D;
+  --bethel-dark-navy: #261A66;
   --bethel-canvas: #F8FAFC;
-  --bethel-soft-blue: #EBF2FE;
+  --bethel-soft-blue: #F0EDFF;
 }
 
 *, *::before, *::after {
@@ -27,7 +34,7 @@ html {
 body {
   font-family: var(--font-geist-sans), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   background-color: var(--bethel-canvas);
-  color: var(--bethel-dark-navy);
+  color: #261A66;
   margin: 0;
   padding: 0;
 }
@@ -38,26 +45,28 @@ body {
   transform: rotate(180deg);
 }
 
-/* Hero background animation and gradient with Bethel Blue */
+/* Hero background animation and gradient with Royal Purple-Navy #261A66 */
 .hero-gradient-overlay {
-  background: linear-gradient(135deg, rgba(11, 40, 109, 0.88) 0%, rgba(7, 27, 73, 0.82) 50%, rgba(11, 27, 61, 0.92) 100%);
+  background: linear-gradient(135deg, rgba(38, 26, 102, 0.94) 0%, rgba(25, 15, 71, 0.90) 50%, rgba(15, 8, 45, 0.96) 100%);
 }
 
-/* Glossy 3D Red Button matching official flyer */
+/* Glossy 3D Vibrant Electric Orange Button (#EF5F18) */
 .btn-enroll-red {
-  background: linear-gradient(180deg, #EF233C 0%, #D90429 60%, #B80222 100%);
-  box-shadow: 0 4px 15px rgba(217, 4, 41, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.35);
-  border: 1px solid #B80222;
+  background: linear-gradient(180deg, #FF7633 0%, #EF5F18 60%, #D44E0E 100%);
+  box-shadow: 0 4px 15px rgba(239, 95, 24, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.35);
+  border: 1px solid #D44E0E;
+  color: #FFFFFF;
+  font-weight: 800;
   transition: all 0.25s ease-in-out;
 }
 .btn-enroll-red:hover {
-  background: linear-gradient(180deg, #F1354C 0%, #E6052E 60%, #C40326 100%);
-  box-shadow: 0 6px 20px rgba(217, 4, 41, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.45);
+  background: linear-gradient(180deg, #FF894D 0%, #EF5F18 60%, #B83F07 100%);
+  box-shadow: 0 6px 20px rgba(239, 95, 24, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.45);
   transform: translateY(-2px);
 }
 .btn-enroll-red:active {
   transform: translateY(1px);
-  box-shadow: 0 2px 8px rgba(217, 4, 41, 0.4);
+  box-shadow: 0 2px 8px rgba(239, 95, 24, 0.4);
 }
 
 /* Modal and Drawer animations */
@@ -84,20 +93,20 @@ body {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #0B1B3D;
+  background: #261A66;
 }
 ::-webkit-scrollbar-thumb {
-  background: #0B286D;
+  background: #EF5F18;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #F59E0B;
+  background: #D44E0E;
 }
 
 /* ─── Dashboard Styles ─── */
 .stat-card-hover:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(11, 40, 109, 0.08);
+  box-shadow: 0 8px 25px rgba(38, 26, 102, 0.08);
 }
 
 .sidebar-container a:hover,
@@ -107,7 +116,7 @@ body {
 
 .sidebar-container a[style*="background: rgb(235, 242, 254)"]:hover,
 .sidebar-container a[style*="background: #EBF2FE"]:hover {
-  background: #EBF2FE !important;
+  background: #F0EDFF !important;
 }
 
 /* Dashboard scrollbar variant (lighter) */

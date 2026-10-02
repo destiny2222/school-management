@@ -65,7 +65,7 @@ export default function Home() {
     : galleryItems.filter(item => item.category === activeGalleryTab);
 
   return (
-    <main className="bg-white min-h-screen text-[#0B1B3D] relative font-sans">
+    <main className="bg-white min-h-screen text-[#261A66] relative font-sans">
       <Header />
       <HeroSection
         onEnrollClick={() => setIsEnrollModalOpen(true)}
@@ -78,7 +78,7 @@ export default function Home() {
 
       <NurturingPlaceSection onDiscoverClick={() => setIsEnrollModalOpen(true)} />
  
-      <section className="relative bg-[#0B286D] text-white overflow-hidden py-16 md:py-24">
+      <section className="relative bg-[#261A66] text-white overflow-hidden py-16 md:py-24">
         {/* Crest Watermark */}
         <div className="absolute top-0 right-0 h-full w-2/3 md:w-1/2 opacity-15 pointer-events-none flex items-center justify-end">
           <Image
@@ -92,7 +92,7 @@ export default function Home() {
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-8">
           <div className="max-w-2xl">
-            <span className="inline-block text-[#F59E0B] font-bold text-sm uppercase tracking-wider mb-2">
+            <span className="inline-block text-[#EF5F18] font-extrabold text-sm uppercase tracking-wider mb-2">
               HURRY!!! It&apos;s Summer & Next Session Time
             </span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-black leading-tight">
@@ -115,33 +115,33 @@ export default function Home() {
       </section>
 
       {/* ────────────────────────────────────────────────────────
-          SECTION 4: TESTIMONIAL & eSCHOOL PLATFORM (#EBF2FE)
+          SECTION 4: TESTIMONIAL & eSCHOOL PLATFORM (#F0EDFF)
       ──────────────────────────────────────────────────────── */}
-      <section className="bg-[#EBF2FE] text-[#0B1B3D] py-16 md:py-28">
+      <section className="bg-[#F0EDFF] text-[#261A66] py-16 md:py-28">
         <div className="max-w-7xl mx-auto px-6 md:px-8 space-y-24 md:space-y-32">
           
           {/* Row 1: Parent Testimonial */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-12 items-center">
             {/* Quote Block */}
             <div className="relative order-2 md:order-1 pt-4">
-              <span className="absolute -top-10 -left-4 text-8xl md:text-9xl font-serif font-bold text-[#0B286D]/20 select-none">
+              <span className="absolute -top-10 -left-4 text-8xl md:text-9xl font-serif font-bold text-[#261A66]/15 select-none">
                 “
               </span>
               <blockquote className="relative z-10">
-                <p className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight text-[#0B1B3D]">
+                <p className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight text-[#261A66]">
                   I didn&apos;t need a seer to see that my child&apos;s remarkable progress at Bethel Montessori Academy is already setting her on the path to a brilliant future.
                 </p>
                 <footer className="mt-6 flex items-center gap-3">
-                  <div className="w-10 h-1 bg-[#D90429]"></div>
+                  <div className="w-10 h-1 bg-[#EF5F18]"></div>
                   <div>
-                    <div className="text-xl font-bold text-[#0B286D]">Mrs Amaka O.</div>
-                    <div className="text-sm font-semibold text-[#0B1B3D]/70">Parent of Grade 5 Pupil • Benin City</div>
+                    <div className="text-xl font-bold text-[#261A66]">Mrs Amaka O.</div>
+                    <div className="text-sm font-semibold text-[#261A66]/70">Parent of Grade 5 Pupil • Benin City</div>
                   </div>
                 </footer>
               </blockquote>
               <button
                 onClick={() => setIsStoriesModalOpen(true)}
-                className="inline-block mt-8 text-lg font-bold text-[#0B286D] hover:text-[#D90429] hover:underline transition-all cursor-pointer"
+                className="inline-block mt-8 text-lg font-bold text-[#261A66] hover:text-[#EF5F18] transition-all cursor-pointer"
               >
                 See more stories from Parents →
               </button>
@@ -149,7 +149,7 @@ export default function Home() {
 
             {/* Parent Photo */}
             <div className="flex justify-center md:justify-end order-1 md:order-2">
-              <div className="relative p-3 sm:p-4 bg-white rounded-2xl shadow-xl border border-blue-100">
+              <div className="relative p-3 sm:p-4 bg-white rounded-2xl shadow-xl border border-purple-100">
                 <Image
                   alt="Smiling parent Mrs Amaka and daughter at Bethel Montessori Academy"
                   src="/images/parent-testimonial.jpg"
@@ -157,8 +157,8 @@ export default function Home() {
                   height={380}
                   className="rounded-xl object-cover aspect-square shadow-sm"
                 />
-                <div className="absolute -bottom-3 -left-3 bg-[#0B286D] text-white px-4 py-2 rounded-lg text-xs font-extrabold shadow-lg flex items-center gap-1.5 border border-[#F59E0B]">
-                  <span className="text-[#F59E0B]">★</span>
+                <div className="absolute -bottom-3 -left-3 bg-[#261A66] text-white px-4 py-2 rounded-lg text-xs font-extrabold shadow-lg flex items-center gap-1.5 border border-[#EF5F18]">
+                  <span className="text-[#EF5F18]">★</span>
                   <span>Verified Bethel PTA Parent</span>
                 </div>
               </div>
@@ -168,10 +168,7 @@ export default function Home() {
       </section>
 
       <GalleryMarqueeSection onGalleryClick={() => setIsGalleryModalOpen(true)} />
-
-      {/* ────────────────────────────────────────────────────────
-          SECTION 5: THE JOURNEY TO EXCELLENCE BANNER
-      ──────────────────────────────────────────────────────── */}
+ 
       <section className="relative h-[60vh] min-h-[480px] w-full flex items-center justify-center text-center overflow-hidden">
         <Image
           alt="Bethel Montessori children dancing and celebrating excellence"
@@ -179,22 +176,22 @@ export default function Home() {
           fill
           className="object-cover object-center"
         />
-        <div className="absolute inset-0 bg-[#0B1B3D]/75"></div>
+        <div className="absolute inset-0 bg-[#261A66]/80"></div>
 
         <div className="relative z-20 px-6 max-w-4xl text-white">
-          <span className="inline-block text-[#F59E0B] text-sm md:text-base font-bold tracking-widest uppercase mb-3">
+          <span className="inline-block text-[#EF5F18] text-sm md:text-base font-extrabold tracking-widest uppercase mb-3">
             Start Today
           </span>
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-black leading-tight drop-shadow-md">
             The journey to excellence begins here.
           </h2>
-          <p className="mt-4 text-lg text-white/90 max-w-xl mx-auto">
+          <p className="mt-4 text-lg text-white/90 max-w-xl mx-auto font-medium">
             Give your child the gift of world-class Montessori foundation, moral grounding, and lifelong confidence at Bethel Montessori Academy.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <a
               href="#contact"
-              className="inline-block px-10 py-3.5 bg-white text-[#0B286D] font-extrabold rounded-lg shadow-xl hover:bg-gray-100 hover:scale-105 transition-all uppercase tracking-wider text-sm"
+              className="inline-block px-10 py-3.5 bg-white text-[#261A66] font-extrabold rounded-lg shadow-xl hover:bg-[#EF5F18] hover:text-white transition-all uppercase tracking-wider text-sm"
             >
               Contact us for more inquiries
             </a>

@@ -157,9 +157,9 @@ export default function AboutCardsSection() {
           </div>
 
           {/* Heading */}
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-black text-[#0B1B3D] tracking-tight leading-[1.2] max-w-4xl">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-black text-[#261A66] tracking-tight leading-[1.2] max-w-4xl">
             Little learners grow stronger, discover more,{" "}
-            <span className="relative inline-block px-2.5 py-0.5 rounded-md bg-[#D0F2F1] text-[#0F172A] font-black">
+            <span className="relative inline-block px-2.5 py-0.5 rounded-md bg-[#EF5F18] text-white font-black">
               and shine brighter
             </span>{" "}
             in every moment
@@ -178,13 +178,13 @@ export default function AboutCardsSection() {
             onMouseEnter={() => setActiveCard("left")}
             className={`relative z-10 rounded-3xl p-7 border transition-all duration-300 cursor-pointer flex flex-col justify-between min-h-[380px] ${
               activeCard === "left"
-                ? "bg-[#FFF1F2] border-[#FECDD3] shadow-xl shadow-rose-100/70"
+                ? "bg-[#FFF3EC] border-[#FFE2D1] shadow-xl shadow-orange-500/10"
                 : "bg-white border-gray-100 shadow-xl shadow-slate-200/50 hover:shadow-2xl"
             }`}
           >
-            {/* Top Left Pink Spark Accent on Hover */}
+            {/* Top Left Orange Spark Accent on Hover */}
             <div
-              className={`absolute -top-3 -left-3 text-[#F43F5E] transition-all duration-300 ${
+              className={`absolute -top-3 -left-3 text-[#EF5F18] transition-all duration-300 ${
                 activeCard === "left"
                   ? "opacity-100 scale-100"
                   : "opacity-0 scale-75 pointer-events-none"
@@ -207,7 +207,7 @@ export default function AboutCardsSection() {
             {/* Top Icon */}
             <div className="pt-2 pb-6">
               <svg
-                className="w-20 h-20 text-[#F43F5E]"
+                className="w-20 h-20 text-[#EF5F18]"
                 viewBox="0 0 64 64"
                 fill="none"
                 stroke="currentColor"
@@ -217,8 +217,8 @@ export default function AboutCardsSection() {
               >
                 {/* Bear Head & Ears */}
                 <circle cx="24" cy="22" r="10" />
-                <circle cx="16" cy="14" r="3.5" fill="#FFE4E6" />
-                <circle cx="32" cy="14" r="3.5" fill="#FFE4E6" />
+                <circle cx="16" cy="14" r="3.5" fill="#FFE2D1" />
+                <circle cx="32" cy="14" r="3.5" fill="#FFE2D1" />
                 <circle cx="21" cy="20" r="1" fill="currentColor" />
                 <circle cx="27" cy="20" r="1" fill="currentColor" />
                 <path d="M22 24c.8.6 3.2.6 4 0" />
@@ -227,22 +227,22 @@ export default function AboutCardsSection() {
                 <path d="M14 30c-2 2-3 5-2 8" />
                 <path d="M34 30c2 2 3 5 2 8" />
                 {/* Blocks */}
-                <rect x="42" y="32" width="13" height="13" rx="2" fill="#FFE4E6" />
+                <rect x="42" y="32" width="13" height="13" rx="2" fill="#FFE2D1" />
                 <path d="M46 36h5M48.5 33.5v5" />
-                <rect x="47" y="17" width="13" height="13" rx="2" fill="#FFE4E6" />
+                <rect x="47" y="17" width="13" height="13" rx="2" fill="#FFE2D1" />
                 <circle cx="53.5" cy="23.5" r="2.5" />
               </svg>
             </div>
 
-            {/* Inner Pink Box */}
+            {/* Inner Orange Box */}
             <div
               className={`rounded-2xl p-6 transition-all duration-300 ${
                 activeCard === "left"
-                  ? "bg-white border-2 border-dashed border-[#F43F5E]/60 shadow-sm"
-                  : "bg-[#FFF1F2] border border-[#FFE4E6]"
+                  ? "bg-white border-2 border-dashed border-[#EF5F18]/60 shadow-sm"
+                  : "bg-[#FFF3EC] border border-[#FFE2D1]"
               }`}
             >
-              <h3 className="text-[#0B1B3D] font-extrabold text-xl mb-2">
+              <h3 className="text-[#261A66] font-extrabold text-xl mb-2">
                 Growing little minds
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed font-medium">
@@ -257,13 +257,13 @@ export default function AboutCardsSection() {
             onMouseEnter={() => setActiveCard("center")}
             className={`relative z-20 rounded-3xl p-7 border transition-all duration-300 cursor-pointer flex flex-col justify-between min-h-[380px] ${
               activeCard === "center"
-                ? "bg-[#F7FEE7] border-[#D9F99D] shadow-xl shadow-lime-100/70"
+                ? "bg-[#F0EDFF] border-[#D8CEFF] shadow-xl shadow-purple-900/10"
                 : "bg-white border-gray-100 shadow-xl shadow-slate-200/50 hover:shadow-2xl"
             }`}
           >
-            {/* Top Right Green Spark Accent */}
+            {/* Top Right Royal Purple Spark Accent */}
             <div
-              className={`absolute -top-3 -right-3 text-[#84CC16] transition-all duration-300 ${
+              className={`absolute -top-3 -right-3 text-[#261A66] transition-all duration-300 ${
                 activeCard === "center"
                   ? "opacity-100 scale-100"
                   : "opacity-0 scale-75 pointer-events-none"
@@ -286,7 +286,7 @@ export default function AboutCardsSection() {
             {/* Top Icon */}
             <div className="pt-2 pb-6">
               <svg
-                className="w-20 h-20 text-[#65A30D]"
+                className="w-20 h-20 text-[#261A66]"
                 viewBox="0 0 64 64"
                 fill="none"
                 stroke="currentColor"
@@ -302,30 +302,30 @@ export default function AboutCardsSection() {
                   height="14"
                   rx="2"
                   transform="rotate(-15 33 17)"
-                  fill="#ECFCCB"
+                  fill="#F0EDFF"
                 />
                 <ellipse cx="28" cy="10" rx="2" ry="1.5" />
                 <ellipse cx="38" cy="7" rx="2" ry="1.5" />
                 {/* Bottom left block */}
-                <rect x="10" y="30" width="22" height="16" rx="2" fill="#ECFCCB" />
+                <rect x="10" y="30" width="22" height="16" rx="2" fill="#F0EDFF" />
                 <ellipse cx="16" cy="28" rx="2.5" ry="1.5" />
                 <ellipse cx="26" cy="28" rx="2.5" ry="1.5" />
                 {/* Bottom right block */}
-                <rect x="34" y="30" width="22" height="16" rx="2" fill="#ECFCCB" />
+                <rect x="34" y="30" width="22" height="16" rx="2" fill="#F0EDFF" />
                 <ellipse cx="40" cy="28" rx="2.5" ry="1.5" />
                 <ellipse cx="50" cy="28" rx="2.5" ry="1.5" />
               </svg>
             </div>
 
-            {/* Inner Green Box */}
+            {/* Inner Purple Box */}
             <div
               className={`rounded-2xl p-6 transition-all duration-300 ${
                 activeCard === "center"
-                  ? "bg-white border-2 border-dashed border-[#A3E635] shadow-sm"
-                  : "bg-[#ECFCCB]/80 border border-[#D9F99D]"
+                  ? "bg-white border-2 border-dashed border-[#261A66]/60 shadow-sm"
+                  : "bg-[#F0EDFF] border border-[#D8CEFF]"
               }`}
             >
-              <h3 className="text-[#0B1B3D] font-extrabold text-xl mb-2">
+              <h3 className="text-[#261A66] font-extrabold text-xl mb-2">
                 Bright young explorers
               </h3>
               <p className="text-gray-700 text-sm leading-relaxed font-medium">
@@ -340,13 +340,13 @@ export default function AboutCardsSection() {
             onMouseEnter={() => setActiveCard("right")}
             className={`relative z-10 rounded-3xl p-7 border transition-all duration-300 cursor-pointer flex flex-col justify-between min-h-[380px] ${
               activeCard === "right"
-                ? "bg-[#F3E8FF]/70 border-[#E9D5FF] shadow-xl shadow-purple-100/70"
+                ? "bg-[#FFF7ED] border-[#FFEDD5] shadow-xl shadow-amber-500/10"
                 : "bg-white border-gray-100 shadow-xl shadow-slate-200/50 hover:shadow-2xl"
             }`}
           >
-            {/* Top Right Purple Spark Accent */}
+            {/* Top Right Orange Spark Accent */}
             <div
-              className={`absolute -top-3 -right-3 text-[#A855F7] transition-all duration-300 ${
+              className={`absolute -top-3 -right-3 text-[#EF5F18] transition-all duration-300 ${
                 activeCard === "right"
                   ? "opacity-100 scale-100"
                   : "opacity-0 scale-75 pointer-events-none"
@@ -369,7 +369,7 @@ export default function AboutCardsSection() {
             {/* Top Icon */}
             <div className="pt-2 pb-6">
               <svg
-                className="w-20 h-20 text-[#A855F7]"
+                className="w-20 h-20 text-[#EF5F18]"
                 viewBox="0 0 64 64"
                 fill="none"
                 stroke="currentColor"
@@ -380,26 +380,26 @@ export default function AboutCardsSection() {
                 {/* Rocket body */}
                 <path
                   d="M42 12c-8 0-18 6-22 18l12 12c12-4 18-14 18-22 0-5-3-8-8-8z"
-                  fill="#F3E8FF"
+                  fill="#FFF7ED"
                 />
                 <circle cx="36" cy="24" r="3.5" fill="currentColor" />
                 {/* Fins */}
-                <path d="M20 30l-8 8 6 4 6-2" fill="#F3E8FF" />
-                <path d="M34 44l8-8 4 6-2 6" fill="#F3E8FF" />
+                <path d="M20 30l-8 8 6 4 6-2" fill="#FFF7ED" />
+                <path d="M34 44l8-8 4 6-2 6" fill="#FFF7ED" />
                 {/* Flame exhaust */}
                 <path d="M16 44c-3 3-5 8-4 12 4 1 9-1 12-4" />
               </svg>
             </div>
 
-            {/* Inner Purple Box */}
+            {/* Inner Orange Box */}
             <div
               className={`rounded-2xl p-6 transition-all duration-300 ${
                 activeCard === "right"
-                  ? "bg-white border-2 border-dashed border-[#A855F7]/60 shadow-sm"
-                  : "bg-[#F3E8FF] border border-[#E9D5FF]"
+                  ? "bg-white border-2 border-dashed border-[#EF5F18]/60 shadow-sm"
+                  : "bg-[#FFF7ED] border border-[#FFEDD5]"
               }`}
             >
-              <h3 className="text-[#0B1B3D] font-extrabold text-xl mb-2">
+              <h3 className="text-[#261A66] font-extrabold text-xl mb-2">
                 Curious minds blooming
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed font-medium">
