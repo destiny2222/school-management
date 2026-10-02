@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "../assets/css/styles.css";
 
 :root {
   /* Bethel Montessori Academy Brand Colors */
@@ -91,4 +92,45 @@ body {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #F59E0B;
+}
+
+/* ─── Dashboard Styles ─── */
+.stat-card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(11, 40, 109, 0.08);
+}
+
+.sidebar-container a:hover,
+.sidebar-container button:hover {
+  background: #F1F5F9 !important;
+}
+
+.sidebar-container a[style*="background: rgb(235, 242, 254)"]:hover,
+.sidebar-container a[style*="background: #EBF2FE"]:hover {
+  background: #EBF2FE !important;
+}
+
+/* Dashboard scrollbar variant (lighter) */
+.sidebar-container::-webkit-scrollbar {
+  width: 4px;
+}
+.sidebar-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+.sidebar-container::-webkit-scrollbar-thumb {
+  background: #E2E8F0;
+  border-radius: 4px;
+}
+.sidebar-container::-webkit-scrollbar-thumb:hover {
+  background: #CBD5E1;
+}
+
+/* Dashboard card animations */
+@keyframes dashFadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.dash-animate-in {
+  animation: dashFadeIn 0.4s ease-out forwards;
 }
