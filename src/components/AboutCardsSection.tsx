@@ -29,10 +29,13 @@ export default function AboutCardsSection() {
       mm.add("(min-width: 768px)", () => {
         const tl = gsap.timeline({
           scrollTrigger: {
-            trigger: cardsWrapperRef.current,
-            start: "top 75%",
-            end: "top 25%",
-            scrub: 1.2,
+            trigger: sectionRef.current,
+            start: "top top",
+            end: "+=900",
+            scrub: 1,
+            pin: true,
+            pinSpacing: true,
+            anticipatePin: 1,
           },
         });
 
@@ -91,10 +94,13 @@ export default function AboutCardsSection() {
       mm.add("(max-width: 767px)", () => {
         const tl = gsap.timeline({
           scrollTrigger: {
-            trigger: cardsWrapperRef.current,
-            start: "top 80%",
-            end: "top 30%",
+            trigger: sectionRef.current,
+            start: "top top",
+            end: "+=600",
             scrub: 1,
+            pin: true,
+            pinSpacing: true,
+            anticipatePin: 1,
           },
         });
 
@@ -139,7 +145,7 @@ export default function AboutCardsSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative bg-[#FAFAFC] py-16 md:py-24 overflow-hidden"
+      className="relative bg-[#FAFAFC] py-16 md:py-24 min-h-screen flex flex-col justify-center overflow-hidden"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header Section */}

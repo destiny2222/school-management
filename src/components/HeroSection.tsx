@@ -3,6 +3,7 @@
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import { gsap } from "gsap";
+import Link from "next/link";
 
 interface HeroSectionProps {
   onEnrollClick: () => void;
@@ -288,7 +289,7 @@ export default function HeroSection({ onEnrollClick, onLoginClick }: HeroSection
   return (
     <section
       ref={containerRef}
-      className="relative w-full min-h-[92vh] lg:min-h-screen flex items-center justify-center overflow-hidden pt-28 pb-16 lg:pt-36 lg:pb-20 bg-[#261A66]"
+      className="relative w-full min-h-[92vh] lg:min-h-screen flex items-center justify-center overflow-hidden pt-28 pb-16 lg:pt-36 lg:pb-20 bg-[#262262]"
       style={{ perspective: "1000px" }}
     >
       {/* ────────────────────────────────────────────────────────
@@ -311,12 +312,12 @@ export default function HeroSection({ onEnrollClick, onLoginClick }: HeroSection
       {/* Multi-layered Soft Dark Vignette Overlay for High Image Visibility */}
       <div
         ref={overlayRef}
-        className="absolute inset-0 pointer-events-none z-0 bg-gradient-to-r from-[#261A66]/90 via-[#190F47]/65 to-black/40"
+        className="absolute inset-0 pointer-events-none z-0 bg-gradient-to-r from-[#262262]/90 via-[#1b1848]/65 to-black/40"
       />
 
       {/* Subtle radial spotlight overlay for focus */}
-      <div className="absolute inset-0 pointer-events-none z-0 bg-[radial-gradient(circle_at_30%_30%,rgba(38,26,102,0.35),transparent_60%)]" />
-      <div className="absolute inset-0 pointer-events-none z-0 bg-[radial-gradient(circle_at_75%_65%,rgba(239,95,24,0.2),transparent_50%)]" />
+      <div className="absolute inset-0 pointer-events-none z-0 bg-[radial-gradient(circle_at_30%_30%,rgba(38,34,98,0.35),transparent_60%)]" />
+      <div className="absolute inset-0 pointer-events-none z-0 bg-[radial-gradient(circle_at_75%_65%,rgba(241,102,35,0.2),transparent_50%)]" />
 
       {/* Subtle Grid Pattern overlay */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff0a_1px,transparent_1px),linear-gradient(to_bottom,#ffffff0a_1px,transparent_1px)] bg-[size:48px_48px] pointer-events-none z-0 opacity-25" />
@@ -324,11 +325,11 @@ export default function HeroSection({ onEnrollClick, onLoginClick }: HeroSection
       {/* Ambient Animated Light Orbs */}
       <div
         ref={lightGlow1Ref}
-        className="absolute top-1/4 left-10 w-96 h-96 bg-[#261A66]/30 blur-[120px] rounded-full pointer-events-none z-0"
+        className="absolute top-1/4 left-10 w-96 h-96 bg-[#262262]/30 blur-[120px] rounded-full pointer-events-none z-0"
       />
       <div
         ref={lightGlow2Ref}
-        className="absolute bottom-10 right-10 w-[450px] h-[450px] bg-[#EF5F18]/25 blur-[140px] rounded-full pointer-events-none z-0"
+        className="absolute bottom-10 right-10 w-[450px] h-[450px] bg-[#f16623]/25 blur-[140px] rounded-full pointer-events-none z-0"
       />
 
       {/* ────────────────────────────────────────────────────────
@@ -336,11 +337,11 @@ export default function HeroSection({ onEnrollClick, onLoginClick }: HeroSection
       ──────────────────────────────────────────────────────── */}
       <div className="max-w-7xl mx-auto px-5 sm:px-8 relative z-10 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-          
+
           {/* LEFT COLUMN: HERO TEXT CONTENT */}
           <div className="lg:col-span-7 text-left space-y-6 sm:space-y-8">
-            
- 
+
+
 
             {/* Staggered Modern Headline */}
             <div className="space-y-1 sm:space-y-2 drop-shadow-[0_4px_16px_rgba(0,0,0,0.85)]">
@@ -352,7 +353,7 @@ export default function HeroSection({ onEnrollClick, onLoginClick }: HeroSection
               </h1>
               <h1
                 ref={titleLine2Ref}
-                className="text-4xl sm:text-6xl md:text-7xl font-black uppercase tracking-tight leading-[1.05] text-transparent bg-clip-text bg-gradient-to-r from-[#EF5F18] via-[#FF7633] to-[#EF5F18]"
+                className="text-4xl sm:text-6xl md:text-7xl font-black uppercase tracking-tight leading-[1.05] text-transparent bg-clip-text bg-gradient-to-r from-[#f16623] via-[#ff7c3c] to-[#f16623]"
               >
                 Building Leaders
               </h1>
@@ -378,9 +379,9 @@ export default function HeroSection({ onEnrollClick, onLoginClick }: HeroSection
               className="flex flex-wrap items-center gap-4 sm:gap-6 pt-2"
             >
               {/* Primary CTA */}
-              <button
-                onClick={onEnrollClick}
-                className="group relative px-8 py-4 rounded-2xl bg-gradient-to-r from-[#FF7633] via-[#EF5F18] to-[#D44E0E] text-white font-extrabold text-base tracking-wide shadow-[0_10px_30px_rgba(239,95,24,0.4)] hover:shadow-[0_15px_40px_rgba(239,95,24,0.6)] transition-all duration-300 hover:scale-105 active:scale-95 inline-flex items-center gap-3 cursor-pointer overflow-hidden border border-white/20"
+              <Link
+                href={'/enroll'}
+                className="group relative px-8 py-4 rounded-2xl bg-gradient-to-r from-[#ff7c3c] via-[#f16623] to-[#d85210] text-white font-extrabold text-base tracking-wide shadow-[0_10px_30px_rgba(241,102,35,0.4)] hover:shadow-[0_15px_40px_rgba(241,102,35,0.6)] transition-all duration-300 hover:scale-105 active:scale-95 inline-flex items-center gap-3 cursor-pointer overflow-hidden border border-white/20"
               >
                 <span className="relative z-10">Enroll Your Child Now</span>
                 <svg
@@ -397,30 +398,28 @@ export default function HeroSection({ onEnrollClick, onLoginClick }: HeroSection
                   />
                 </svg>
                 <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
-              </button>
+              </Link>
 
               {/* Secondary CTA */}
-              {onLoginClick && (
-                <button
-                  onClick={onLoginClick}
+                <Link
+                  href={'/login'} 
                   className="px-7 py-4 rounded-2xl bg-white/10 hover:bg-white/20 backdrop-blur-xl border border-white/25 text-white font-bold text-base tracking-wide transition-all duration-300 hover:scale-105 active:scale-95 inline-flex items-center gap-2.5 cursor-pointer shadow-lg"
                 >
                   <svg
-                    className="w-5 h-5 text-[#EF5F18]"
+                    className="w-5 h-5 text-[#f16623]" 
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
                     strokeWidth={2}
                   >
                     <path
-                      strokeLinecap="round"
+                      strokeLinecap="round" 
                       strokeLinejoin="round"
                       d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"
                     />
                   </svg>
                   <span>Parent Portal Login</span>
-                </button>
-              )}
+                </Link> 
             </div>
           </div>
         </div>
